@@ -5,7 +5,7 @@ I don't use Chrome's Autofill for usernames, passwords, forms, etc. I do use the
 
 ## Usage
 
-Load the [extensions](/extension/) directory as [an unpacked extension](https://developer.chrome.com/extensions/getstarted#unpacked) in Chrome.
+Load the [extension](/extension/) directory as [an unpacked extension](https://developer.chrome.com/extensions/getstarted#unpacked) in Chrome, or pack the extension and install it if you don't want to keep the directory on your computer.
 
 Visit [the Wells Fargo homepage](https://www.wellsfargo.com/) and enjoy not having to type your username over and over at every visit.
 
