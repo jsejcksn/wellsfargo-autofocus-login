@@ -1,7 +1,7 @@
 Chrome extension to remember your username at wellsfargo.com
 ===
 
-### Also focuses password dialog for super quick login.
+### Also automatically focuses password input field for super quick login.
 
 I don't use Chrome's Autofill for usernames, passwords, forms, etc. I do use the *Remember me* checkboxes on websites for setting a cookie to remember my username across visits. Wells Fargo doesn't have that for its site, so this fixes that with `localStorage`.
 
