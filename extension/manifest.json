@@ -1,15 +1,21 @@
 {
-	"name": "Userscript - Wells Fargo",
-	"description": "Autofill username",
-	"version": "1.1.0",
+	"name": "Wells Fargo - Remember username",
+	"short_name": "WF Username √",
+	"description": "Remember and autofill your username at wellsfargo.com",
+	"version": "1.1.2",
 	"manifest_version": 2,
 
 	"content_scripts": [ {
 		"js": [
-			"user.js"
+			"js/user.js"
 			],
 		"matches": [
 			"https://www.wellsfargo.com/"
 			]
-		} ]
+		} ],
+	"icons": {
+		"16": "icons/icon-16.png",
+		"48": "icons/icon-48.png",
+		"128": "icons/icon-128.png"
+		}
 }
