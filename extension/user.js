@@ -1,24 +1,18 @@
-if (!localStorage.userid) {
-	storeFillID();
-	} else {
-		fillID();
+var p = document.getElementById('password');
+var u = document.getElementById('userid');
+
+u.addEventListener('change', storeID);
+if (!(localStorage.getItem('userid') === null) && !(localStorage.userid == '')) { // Exists and not empty
+	fillID();
+	} else { // Does not exist or is empty
+		u.focus();
 		}
 
 function fillID() {
-	document.getElementById('userid').value = localStorage.userid;
-	document.getElementById('password').focus();
+	u.value = localStorage.userid;
+	p.focus();
 	}
 
-function storeFillID() {
-	var username = prompt('Please enter your Username to autofill at future visits', 'username');
-	if (username && username != 'username' || '') {
-		localStorage.setItem('userid', username);
-		document.getElementById('userid').value = localStorage.userid;
-		document.getElementById('password').focus();
-		} else if (username) {
-			document.getElementById('userid').value = username;
-			document.getElementById('password').focus();
-			} else {
-				document.getElementById('userid').focus();
-				}
+function storeID() {
+	localStorage.setItem('userid', u.value);
 	}
