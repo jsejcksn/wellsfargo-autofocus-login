@@ -1,9 +1,9 @@
-if (document.getElementById('userid') && document.getElementById('password')) {
+if (document.getElementById('userid') && document.getElementById('password')) { // Username and password inputs exist
 	var p = document.getElementById('password');
 	var u = document.getElementById('userid');
 	init();
 	} else {
-		console.log('Chrome extension "Wells Fargo - Remember username" is out of date and is no longer functioning. Developer must update.');
+		console.log('Chrome extension "Wells Fargo - Remember username" is out of date and is no longer functioning. Developer must update.'); // Wells Fargo homepage has been updated, breaking extension functionality
 		}
 
 function init() {
