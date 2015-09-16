@@ -2,22 +2,13 @@
   'use strict';
 
   function init() {
-    u.addEventListener('change', storeID);
-    var userid = localStorage.getItem('userid');
-    if (userid !== null && typeof userid !== 'undefined' && userid !== '' && userid !== ' ') { // localStorage key exists and is not empty or a single space
-      fillID();
-    } else { // Does not exist or is empty or a single space
+    if (u.value !== 'undefined' && u.value !== '') { // Username is not empty
+      console.log('Username remembered');
+      p.focus();
+    } else { // Is empty
+      console.log('Enter your username');
       u.focus();
     }
-  }
-
-  function fillID() {
-    u.value = localStorage.userid;
-    p.focus();
-  }
-
-  function storeID() {
-    localStorage.setItem('userid', u.value);
   }
 
   if (document.getElementById('userid') && document.getElementById('password')) { // Username and password inputs exist
