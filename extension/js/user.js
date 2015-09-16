@@ -1,4 +1,5 @@
 (function() {
+	'use strict';
 
   if (document.getElementById('userid') && document.getElementById('password')) { // Username and password inputs exist
     var p = document.getElementById('password');
