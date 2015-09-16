@@ -8,7 +8,7 @@ if (document.getElementById('userid') && document.getElementById('password')) { 
 
 function init() {
 	u.addEventListener('change', storeID);
-	if (!(localStorage.getItem('userid') === null) && !(localStorage.userid == '')) { // localStorage key exists and is not empty
+	if (!(localStorage.getItem('userid') === null || undefined || '' || 0)) { // localStorage key exists and is not empty
 		fillID();
 		} else { // Does not exist or is empty
 			u.focus();
