@@ -2,7 +2,7 @@
 	"name": "Wells Fargo - Remember username",
 	"short_name": "WF Username √",
 	"description": "Remember and autofill your username at wellsfargo.com",
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"manifest_version": 2,
 
 	"content_scripts": [ {
