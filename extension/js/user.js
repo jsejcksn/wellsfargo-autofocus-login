@@ -2,7 +2,7 @@
   'use strict';
 
   function init() {
-    if (u.value !== 'undefined' && u.value !== '') { // Username is not empty
+    if (u.value !== '') { // Username is not empty
       console.log('Username remembered');
       p.focus();
     } else { // Is empty
